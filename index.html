@@ -106,13 +106,16 @@ section:last-of-type { border-bottom: none; }
   text-align: center;
   margin-bottom: 48px;
   line-height: 1.4;
+  width: 100%;
 }
-/* Body text: left-aligned */
+/* Body text: left-aligned block, centered on page */
 .sec-body {
   font-size: var(--font-body);
   color: #333;
   line-height: 2;
   max-width: 720px;
+  margin-left: auto;
+  margin-right: auto;
 }
 /* Centered wrapper (for section content blocks) */
 .sec-inner {
@@ -504,22 +507,11 @@ footer {
 
 <!-- ── HERO ── -->
 <div class="hero" id="hero">
-  <!--
-    動画ファイルを同じフォルダに置いてください。
-    MP4 を優先、MOV をフォールバックとして対応します。
-    ファイルが見つからない場合は "Coming soon" プレースホルダーを表示します。
-  -->
-  <video
-    loop
-    controls
-    playsinline
-    id="heroVideo"
-    poster="mossmuss_top_poster.jpg"
+  <img
+    src="images/mossmuss_top.jpg"
+    alt="moss muss トップ画像"
+    style="width:100%; height:100%; object-fit:cover; display:block;"
   >
-    <source src="mossmuss_top.mov" type="video/quicktime">
-    <source src="mossmuss_top.mp4" type="video/mp4">
-  </video>
-  <div class="hero-placeholder" id="heroFallback" style="display:none;">Coming soon</div>
 </div>
 
 <!-- ── MESSAGE ── -->
@@ -604,15 +596,50 @@ footer {
   </div>
 </section>
 
-<!-- ── PORTFOLIO ── -->
 <section id="portfolio">
   <div class="sec-inner">
     <h2 class="sec-title">portfolio</h2>
     <p class="portfolio-note">当社およびグループメンバーによる実績</p>
     <div class="portfolio-grid">
-      <img src="images/mossmuss_farm1.jpg" alt="施工実績1">
-      <img src="images/mossmuss_farm2.jpg" alt="施工実績2">
+      <img src="images/mossmuss_portfolio1.jpg" alt="施工実績1">
+      <img src="images/mossmuss_portfolio2.JPG" alt="施工実績2">
+      <img src="images/mossmuss_portfolio3.JPG" alt="施工実績3">
+      <img src="images/mossmuss_portfolio4.jpg" alt="施工実績4">
+      <img src="images/mossmuss_portfolio5.jpg" alt="施工実績5">
+      <img src="images/mossmuss_portfolio6.jpg" alt="施工実績6">
+      <img src="images/mossmuss_portfolio7.JPG" alt="施工実績7">
+      <img src="images/mossmuss_portfolio8.jpg" alt="施工実績8">
+      <img src="images/mossmuss_portfolio9.jpeg" alt="施工実績9">
+      <img src="images/mossmuss_portfolio10.JPG" alt="施工実績10">
+      <img src="images/mossmuss_portfolio11.JPG" alt="施工実績11">
     </div>
+
+    <!-- 圃場セクション -->
+    <div class="farm-section">
+      <p class="farm-note">以下は当社グループおよび提携先、または栽培者の圃場の一例です。<br>当社でトレイ栽培し増やした苔を、スナゴケシート栽培に使用しています。</p>
+      <div class="farm-grid">
+      <img src="images/mossmuss_farm1.jpg" alt="圃場1">
+      <img src="images/mossmuss_farm2.jpg" alt="圃場2">
+      <img src="images/mossmuss_farm3.jpg" alt="圃場3">
+      <img src="images/mossmuss_farm4.jpg" alt="圃場4">
+      </div>
+    </div>
+
+    <!-- R&D セクション -->
+    <div class="science-section">
+      <div class="science-inner">
+        <div class="science-img">
+          <img src="images/mossmuss_science1.jpg" alt="研究開発1">
+        </div>
+        <div class="science-text">
+          <p>また、より高い品質の商品へと改善を重ねたり、商品特性を測定したり、<br>新たな商品の創造に向けて、大学、研究機関、企業等とのR&Dも進めて参ります。</p>
+        </div>
+        <div class="science-img">
+          <img src="images/mossmuss_science2.jpg" alt="研究開発2">
+        </div>
+      </div>
+    </div>
+
   </div>
 </section>
 
